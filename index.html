@@ -419,6 +419,18 @@
                   </div>
                 </form>
                 <div id="adminVolunteerShiftsList" class="admin-review-list"></div>
+                <h4>Available shifts</h4>
+                <div id="volunteerShiftsGrid" class="events-grid"></div>
+                <form id="volunteerShiftSignupForm" class="community-form">
+                  <h4>Join a shift</h4>
+                  <div class="field-row">
+                    <label>Shift<select name="shiftId" id="volunteerShiftSelect" required></select></label>
+                    <label>Your name<input name="name" maxlength="120" autocomplete="name" required /></label>
+                    <label>Email<input name="email" type="email" maxlength="254" autocomplete="email" required /></label>
+                    <button type="submit" class="primary-btn small">Join shift</button>
+                  </div>
+                  <div id="volunteerShiftFeedback" class="form-message" role="status" aria-live="polite"></div>
+                </form>
               </div>
 
               <div class="panel full-width admin-only">
@@ -669,28 +681,6 @@
             </div>
           </div>
           <div id="eventsGrid" class="events-grid"></div>
-        </div>
-      </section>
-
-      <section id="volunteerShifts" class="section">
-        <div class="container">
-          <div class="section-heading compact">
-            <div>
-              <p class="eyebrow">Step into service</p>
-              <h2>Volunteer shifts</h2>
-            </div>
-          </div>
-          <div id="volunteerShiftsGrid" class="events-grid"></div>
-          <form id="volunteerShiftSignupForm" class="community-form">
-            <h3>Join a shift</h3>
-            <div class="field-row">
-              <label>Shift<select name="shiftId" id="volunteerShiftSelect" required></select></label>
-              <label>Your name<input name="name" maxlength="120" autocomplete="name" required /></label>
-              <label>Email<input name="email" type="email" maxlength="254" autocomplete="email" required /></label>
-              <button type="submit" class="primary-btn small">Join shift</button>
-            </div>
-            <div id="volunteerShiftFeedback" class="form-message" role="status" aria-live="polite"></div>
-          </form>
         </div>
       </section>
 

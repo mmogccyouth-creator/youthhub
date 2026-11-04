@@ -72,7 +72,7 @@ Do not commit database URLs or secrets. Railway's filesystem is not persistent u
 - Browse events in a month calendar and download calendar reminders with a one-day alert
 - Set event capacities, waitlist additional RSVPs, and automatically promote the next person when a confirmed booking is cancelled
 - Issue QR check-in passes, scan or enter tokens as an administrator, and export attendance and service-hour reports
-- Create volunteer shifts with capacity limits and let members sign up or join a shift waitlist
+- Manage volunteer shifts, capacity, signups, and waitlists from the admin dashboard
 - Let members securely sign in to view their own registrations, shifts, and service hours
 - Share event details through prefilled email or WhatsApp messages
 - Add gallery images with captions and categories
