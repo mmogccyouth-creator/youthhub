@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MMOGCC YOUTH HUB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=scroll-reveal-20261104" />
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <img class="brand-mark" src="mmogcc-logo.jpeg" alt="Mary Mother of God Catholic Church logo" />
+          <div>
+            <p class="brand-name">MMOGCC YOUTH HUB</p>
+          </div>
+        </div>
+
+        <nav class="main-nav">
+          <a href="#overview">Overview</a>
+          <a href="#dashboards">Dashboards</a>
+          <a href="#calendar">Calendar</a>
+          <a href="#events">Events</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#interestGroups">Community</a>
+          <a href="#executives">Executives</a>
+        </nav>
+
+        <div class="theme-switcher" aria-label="Design theme selector">
+          <button class="theme-btn active" data-theme="premium" type="button">Premium</button>
+          <button class="theme-btn" data-theme="dark" type="button">Dark</button>
+        </div>
+
+        <div class="auth-area">
+          <button id="logoutBtn" class="secondary-btn small-btn hidden">Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">MMOGCC YOUTH leadership.</p>
+            <h1>Building brighter futures through MMOGCC YOUTH action.</h1>
+            <p class="lead">
+              Register members, showcase MMOGCC YOUTH events, celebrate
+              milestones, and keep the MMOGCC YOUTH community connected through one
+              focused platform.
+            </p>
+            <div class="hero-actions">
+              <a href="#dashboards" class="primary-btn">Explore Dashboard</a>
+              <a href="#events" class="secondary-btn">View Events</a>
+            </div>
+            <ul class="hero-meta">
+              <li><strong>1,200+</strong><span>members</span></li>
+              <li><strong>24</strong><span>active projects</span></li>
+              <li><strong>86%</strong><span>engagement rate</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-panel">
+            <div class="mini-card">
+              <span class="tag success">Live</span>
+              <h3>MMOGCC YOUTH Roadshow</h3>
+              <p>Saturday · 9:00 AM · MMOGCC YOUTH Center</p>
+            </div>
+            <div class="mini-graph">
+              <div class="bars">
+                <span style="height: 40%"></span>
+                <span style="height: 62%"></span>
+                <span style="height: 55%"></span>
+                <span style="height: 80%"></span>
+                <span style="height: 70%"></span>
+                <span style="height: 95%"></span>
+              </div>
+            </div>
+            <div class="mini-stats">
+              <div>
+                <strong>328</strong>
+                <span>Events seen</span>
+              </div>
+              <div>
+                <strong>94</strong>
+                <span>New signups</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section join-section">
+        <div class="container join-grid">
+          <div class="join-copy">
+            <p class="eyebrow">Join us</p>
+            <h2>Become part of MMOGCC YOUTH today.</h2>
+            <p>
+              Register to receive updates on events, outreach opportunities, and
+              leadership initiatives across MMOGCC YOUTH communities in Ghana.
+            </p>
+          </div>
+
+          <div class="join-card">
+            <h3>Member registration</h3>
+            <p>Start your membership journey with MMOGCC YOUTH.</p>
+            <button id="joinMemberBtn" class="primary-btn" type="button">Join MMOGCC YOUTH</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="memberAccessSection" class="section member-access-section">
+        <div class="container member-access-layout">
+          <div>
+            <p class="eyebrow">Already part of the community?</p>
+            <h2>Sign in to your youth account</h2>
+            <p>Keep track of your registrations, volunteer shifts, and service hours.</p>
+          </div>
+          <form id="memberLoginForm" class="community-form member-login-form">
+            <label>Email<input type="email" name="email" autocomplete="username" required /></label>
+            <label>Password<input type="password" name="password" autocomplete="current-password" required /></label>
+            <div class="member-access-actions">
+              <button type="submit" class="primary-btn small">Member sign in</button>
+              <button id="openMemberSignupFromDashboard" type="button" class="calendar-add-btn">Create account</button>
+            </div>
+            <div id="memberLoginFeedback" class="form-message" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Google AdSense Banner Ad #1 -->
+      <div class="ad-container ad-horizontal">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+             data-ad-slot="1234567890"
+             data-ad-format="horizontal"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+      <section id="overview" class="stats-section">
+        <div class="container stats-grid">
+          <article class="stat-card">
+            <span class="icon blue">👥</span>
+            <div>
+              <strong id="statMembers">0</strong>
+              <small>Registered members</small>
+            </div>
+          </article>
+          <article class="stat-card">
+            <span class="icon purple">📅</span>
+            <div>
+              <strong id="statEvents">0</strong>
+              <small>Upcoming events</small>
+            </div>
+          </article>
+          <article class="stat-card">
+            <span class="icon orange">🖼️</span>
+            <div>
+              <strong id="statGallery">0</strong>
+              <small>Gallery items</small>
+            </div>
+          </article>
+          <article class="stat-card">
+            <span class="icon green">🏆</span>
+            <div>
+              <strong id="statExecutives">0</strong>
+              <small>Executives</small>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="impactQuest" class="section impact-section">
+        <div class="container">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Your next chapter</p>
+              <h2>Small actions. Lasting impact.</h2>
+            </div>
+            <span class="impact-season">COMMUNITY QUEST · THIS MONTH</span>
+          </div>
+          <div class="impact-quest">
+            <div class="impact-summary">
+              <p class="impact-kicker">YOUR IMPACT PASSPORT</p>
+              <div id="impactProgressRing" class="impact-progress-ring" role="img" aria-label="0 of 3 actions completed">
+                <span><strong id="impactProgressCount">0</strong><small>of 3 actions</small></span>
+              </div>
+              <h3 id="impactMilestoneTitle">Your first step starts here</h3>
+              <p id="impactMilestoneText">Complete all three actions to earn the Community Spark badge.</p>
+              <span id="impactBadge" class="impact-badge" aria-live="polite">✦ Community Spark</span>
+            </div>
+            <div class="impact-missions" id="impactMissions" aria-label="Community quest actions"></div>
+          </div>
+          <p class="impact-note">Your progress is saved on this device.</p>
+        </div>
+      </section>
+
+      <section id="dashboards" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Member payments</p>
+              <h2>Support your community with secure dues payments</h2>
+            </div>
+            <div class="dashboard-actions">
+              <div class="segmented-control">
+                <button class="view-toggle active" data-view="member" type="button" aria-haspopup="dialog" aria-controls="duesPaymentModal">Pay your Dues now</button>
+              </div>
+
+              <div id="chatbotWidget" class="chatbot-widget inline-help">
+                <div id="chatbotPanel" class="chatbot-panel hidden">
+                  <div class="chatbot-head">
+                    <div>
+                      <h3>MMOGCC YOUTH Help</h3>
+                      <small>Ask about registration, gallery, executives, and events</small>
+                    </div>
+                    <button id="chatbotCloseBtn" class="close-btn" type="button">×</button>
+                  </div>
+
+                  <div id="chatbotMessages" class="chatbot-messages">
+                    <div class="message bot">
+                      Hello! I’m the MMOGCC YOUTH help assistant. Ask me about registration, gallery, executives, events, and updates.
+                    </div>
+                  </div>
+
+                  <div class="chatbot-suggestions">
+                    <button class="chatbot-suggestion" type="button" data-question="How do I register as a member?">Register</button>
+                    <button class="chatbot-suggestion" type="button" data-question="How do I view gallery pictures?">Gallery</button>
+                  </div>
+
+                  <form id="chatbotForm" class="chatbot-form">
+                    <input id="chatbotInput" type="text" placeholder="Type your question..." autocomplete="off" />
+                    <button type="submit" class="primary-btn small">Send</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="adminDashboard" class="dashboard-panel active hidden">
+            <div class="admin-grid">
+              <div class="panel wider admin-only">
+                <div class="panel-head">
+                  <h3>Member registration overview</h3>
+                  <button id="exportMembersBtn" class="chip-btn" type="button">Export</button>
+                  <button id="exportReportsBtn" class="chip-btn" type="button">Export reports</button>
+                </div>
+
+                <div class="overview-controls">
+                  <input id="memberSearchInput" type="search" placeholder="Search members..." />
+                  <select id="memberStatusFilter">
+                    <option value="all">All statuses</option>
+                    <option value="Active">Active</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Review">Review</option>
+                  </select>
+                  <select id="memberSortSelect">
+                    <option value="name-asc">Sort: Name A–Z</option>
+                    <option value="name-desc">Sort: Name Z–A</option>
+                    <option value="status">Sort: Status</option>
+                    <option value="engagement-desc">Sort: Engagement</option>
+                  </select>
+                </div>
+
+                <div id="overviewHighlights" class="overview-highlights"></div>
+
+                <div class="table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Member</th>
+                        <th>Role</th>
+                        <th>Engagement</th>
+                        <th>Age</th>
+                        <th>Day born group</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody id="memberTable"></tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="panel full-width admin-only">
+                <div class="panel-head">
+                  <h3>Membership insights</h3>
+                  <span class="chip purple">Live breakdown</span>
+                </div>
+                <div id="memberInsightsChart" class="insights-chart"></div>
+              </div>
+
+              <div class="panel full-width admin-only">
+                <div class="panel-head">
+                  <h3>Admin sign-in security</h3>
+                  <span class="chip neutral">Server managed</span>
+                </div>
+
+                <p>
+                  The administrator password is configured securely in the server environment, not in this browser.
+                  Update the <code>ADMIN_PASSWORD</code> service variable in Railway to change it.
+                </p>
+              </div>
+
+              <div class="panel full-width admin-only">
+                <div class="panel-head">
+                  <h3>Member activity records</h3>
+                  <span class="chip neutral">Admin only</span>
+                </div>
+                <div id="activityRecordsList" class="activity-records"></div>
+              </div>
+
+              <div class="panel admin-only">
+                <div class="panel-head">
+                  <h3>Engagement pulse</h3>
+                  <span class="chip success">+18% this month</span>
+                </div>
+                <div class="engagement-graph">
+                  <div class="graph-bars">
+                    <span style="height: 32%"></span>
+                    <span style="height: 58%"></span>
+                    <span style="height: 40%"></span>
+                    <span style="height: 76%"></span>
+                    <span style="height: 66%"></span>
+                    <span style="height: 82%"></span>
+                    <span style="height: 92%"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel full-width admin-only">
+                <div class="panel-head">
+                  <h3>Event upload center</h3>
+                  <span class="chip neutral">Fast publish</span>
+                </div>
+
+                <form id="eventForm" class="multi-form">
+                  <div class="field-row">
+                    <label>
+                      Event title
+                      <input type="text" name="title" placeholder="Youth Leadership Forum" required />
+                    </label>
+                    <label>
+                      Date
+                      <input type="date" name="date" required />
+                    </label>
+                  </div>
+                  <div class="field-row">
+                    <label>
+                      Venue
+                      <input type="text" name="venue" placeholder="Main Hall" required />
+                    </label>
+                    <label>
+                      Category
+                      <select name="category">
+                        <option value="Training">Training</option>
+                        <option value="Outreach">Outreach</option>
+                        <option value="Workshop">Workshop</option>
+                        <option value="Social">Social</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="field-row">
+                    <label>Attendee capacity<input type="number" name="capacity" min="1" max="5000" value="40" /></label>
+                    <span class="privacy-note">Full events place new RSVPs on a waitlist.</span>
+                  </div>
+                  <label>
+                    Description
+                    <textarea name="description" rows="3" placeholder="Brief summary of the event..." required></textarea>
+                  </label>
+                  <div class="field-row upload-row">
+                    <label class="upload-box">
+                      <input type="file" name="poster" accept="image/*" />
+                      <span>Upload poster</span>
+                    </label>
+                    <button type="submit" class="primary-btn small">Publish event</button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="panel full-width admin-only">
+                <div class="panel-head">
+                  <h3>QR event check-in</h3>
+                  <span class="chip neutral">Admin only</span>
+                </div>
+                <div class="qr-checkin-tools">
+                  <video id="checkinCameraPreview" class="hidden" playsinline aria-label="QR check-in camera"></video>
+                  <div class="qr-checkin-actions">
+                    <button id="startCheckinScanBtn" class="secondary-btn small" type="button">Start camera scanner</button>
+                    <button id="stopCheckinScanBtn" class="chip-btn" type="button">Stop camera</button>
+                  </div>
+                  <form id="checkinTokenForm" class="field-row">
+                    <label>Or enter check-in token<input name="token" autocomplete="off" required /></label>
+                    <button class="primary-btn small" type="submit">Check in</button>
+                  </form>
+                  <p id="checkinFeedback" class="form-message" role="status" aria-live="polite"></p>
+                </div>
+              </div>
+
+              <div class="panel full-width admin-only">
+                <div class="panel-head">
+                  <h3>Volunteer shifts</h3>
+                  <span class="chip neutral">Set a role and capacity</span>
+                </div>
+                <form id="volunteerShiftForm" class="multi-form">
+                  <div class="field-row">
+                    <label>Shift title<input name="title" maxlength="120" placeholder="Welcome desk" required /></label>
+                    <label>Event<input name="eventTitle" maxlength="160" placeholder="Youth gathering" required /></label>
+                    <label>Slots<input name="capacity" type="number" min="1" max="200" value="4" required /></label>
+                    <button class="primary-btn small" type="submit">Add shift</button>
+                  </div>
+                </form>
+                <div id="adminVolunteerShiftsList" class="admin-review-list"></div>
+              </div>
+
+              <div class="panel full-width admin-only">
+                <div class="panel-head">
+                  <h3>Add a member</h3>
+                  <span class="chip neutral">Quick register</span>
+                </div>
+
+                <form id="memberForm" class="multi-form">
+                  <div class="field-row">
+                    <label>
+                      Full name
+                      <input type="text" name="memberName" placeholder="Mary Adhiambo" required />
+                    </label>
+                    <label>
+                      Role
+                      <input type="text" name="memberRole" placeholder="Community Volunteer" required />
+                    </label>
+                  </div>
+                  <div class="field-row">
+                    <label>
+                      Status
+                      <select name="memberStatus">
+                        <option value="Active">Active</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Review">Review</option>
+                      </select>
+                    </label>
+                    <button type="submit" class="primary-btn small">Add member</button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="panel full-width admin-only">
+                <div class="panel-head">
+                  <h3>Add an executive</h3>
+                  <span class="chip neutral">Admin only</span>
+                </div>
+
+                <form id="executiveForm" class="multi-form">
+                  <div class="field-row">
+                    <label>
+                      Executive name
+                      <input type="text" name="executiveName" placeholder="Mary Asare" required />
+                    </label>
+                    <label>
+                      Role
+                      <input type="text" name="executiveRole" placeholder="MMOGCC YOUTH Programs Director" required />
+                    </label>
+                  </div>
+                  <div class="field-row">
+                    <label>
+                      Focus area
+                      <input type="text" name="executiveFocus" placeholder="Leadership" required />
+                    </label>
+                    <label>
+                      Photo
+                      <input type="file" name="executiveImage" accept="image/*" required />
+                    </label>
+                  </div>
+                  <label>
+                    Quote
+                    <textarea name="executiveQuote" rows="3" placeholder="A short leadership message..." required></textarea>
+                  </label>
+                  <button type="submit" class="primary-btn small">Add executive</button>
+                </form>
+              </div>
+
+              <div class="panel full-width admin-only">
+                <div class="panel-head">
+                  <h3>Gallery upload center</h3>
+                  <span class="chip neutral">Admin only</span>
+                </div>
+
+                <form id="galleryForm" class="gallery-form">
+                  <label>
+                    Add gallery image
+                    <input type="file" name="galleryImage" accept="image/*" />
+                  </label>
+                  <label>
+                    Caption
+                    <input type="text" name="caption" placeholder="Community cleanup drive" />
+                  </label>
+                  <label>
+                    Category
+                    <select name="category">
+                      <option value="Training">Training</option>
+                      <option value="Outreach">Outreach</option>
+                      <option value="Workshop">Workshop</option>
+                      <option value="Social">Social</option>
+                    </select>
+                  </label>
+                  <button type="submit" class="primary-btn small">Upload image</button>
+                </form>
+              </div>
+
+              <div class="panel full-width admin-only">
+                <div class="panel-head">
+                  <h3>Attendance & service hours</h3>
+                  <span class="chip neutral">Admin only</span>
+                </div>
+                <form id="serviceLogForm" class="multi-form">
+                  <div class="field-row">
+                    <label>Member<select id="serviceMemberSelect" name="memberEmail" required></select></label>
+                    <label>Activity<input type="text" name="activity" maxlength="120" placeholder="Community outreach" required /></label>
+                  </div>
+                  <div class="field-row">
+                    <label>Date<input type="date" name="date" required /></label>
+                    <label>Service hours<input type="number" name="hours" min="0" max="24" step="0.25" value="1" required /></label>
+                    <button type="submit" class="primary-btn small">Record attendance</button>
+                  </div>
+                </form>
+                <div id="serviceHoursSummary" class="service-hours-summary"></div>
+                <div id="serviceLogsList" class="admin-review-list"></div>
+              </div>
+
+              <div class="panel full-width admin-only">
+                <div class="panel-head">
+                  <h3>Private member requests</h3>
+                  <span class="chip neutral">Admin only</span>
+                </div>
+                <div id="prayerRequestsList" class="admin-review-list"></div>
+                <div class="panel-head group-request-heading">
+                  <h3>Interest group requests</h3>
+                </div>
+                <div id="groupInterestRequestsList" class="admin-review-list"></div>
+              </div>
+
+              <div class="panel full-width admin-only">
+                <div class="panel-head">
+                  <h3>Photo submissions</h3>
+                  <span class="chip neutral">Approve before publishing</span>
+                </div>
+                <div id="photoSubmissionsList" class="admin-review-list"></div>
+              </div>
+
+              <div class="panel full-width admin-only">
+                <div class="panel-head">
+                  <h3>Community spotlight & milestones</h3>
+                  <span class="chip neutral">Share with consent</span>
+                </div>
+                <form id="spotlightForm" class="multi-form">
+                  <div class="field-row">
+                    <label>Featured member<input type="text" name="name" maxlength="100" placeholder="Member name" required /></label>
+                    <label>Role or contribution<input type="text" name="role" maxlength="120" placeholder="Youth volunteer" required /></label>
+                  </div>
+                  <label>Member story<textarea name="story" maxlength="400" rows="2" placeholder="A short note about their contribution" required></textarea></label>
+                  <label class="consent-check"><input type="checkbox" name="consent" required /> I have permission to publish this member's name and story.</label>
+                  <button type="submit" class="primary-btn small">Publish spotlight</button>
+                </form>
+                <form id="milestoneForm" class="multi-form milestone-form">
+                  <div class="field-row">
+                    <label>Member name<input type="text" name="name" maxlength="100" required /></label>
+                    <label>Milestone<select name="type"><option>Volunteer milestone</option><option>Leadership achievement</option><option>Community celebration</option></select></label>
+                  </div>
+                  <div class="field-row">
+                    <label>Short message<input type="text" name="message" maxlength="180" required /></label>
+                    <button type="submit" class="primary-btn small">Add milestone</button>
+                  </div>
+                  <label class="consent-check"><input type="checkbox" name="consent" required /> I have permission to share this milestone publicly.</label>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div id="memberDashboard" class="dashboard-panel">
+            <div class="member-grid">
+              <div class="panel profile-panel">
+                <div class="panel-head">
+                  <h3>Registration summary</h3>
+                  <span class="chip success">Active member</span>
+                </div>
+                <div class="member-profile">
+                  <div class="avatar">SM</div>
+                  <div>
+                    <h4 id="memberProfileName">Sarah Mantey</h4>
+                    <p id="memberProfileId">Member ID: MMOGCC-2048</p>
+                  </div>
+                </div>
+                <ul class="profile-list">
+                  <li><span>Email</span><strong id="memberProfileEmail">sarah@mmogccgh.org</strong></li>
+                  <li><span>Department</span><strong id="memberProfileRole">Catholic Youth Formation & Outreach</strong></li>
+                  <li><span>Attendance</span><strong id="memberProfileAttendance">92%</strong></li>
+                </ul>
+              </div>
+
+              <div class="panel">
+                <div class="panel-head">
+                  <h3>My tasks</h3>
+                  <span class="chip neutral">3 pending</span>
+                </div>
+                <ul id="taskList" class="task-list"></ul>
+              </div>
+
+              <div class="panel full-width">
+                <div class="panel-head">
+                  <h3>Pay membership dues</h3>
+                  <span class="chip purple">Secure checkout</span>
+                </div>
+                <p class="dues-description">Enter your payment details and continue to secure Paystack checkout.</p>
+                <button id="openDuesPaymentBtn" type="button" class="primary-btn small">Pay your Dues now</button>
+              </div>
+
+              <div class="panel">
+                <div class="panel-head">
+                  <h3>Upcoming participation</h3>
+                  <span id="memberBookedCount" class="chip purple">0 booked</span>
+                </div>
+                <div id="memberEvents" class="event-stack"></div>
+              </div>
+
+              <div id="memberAccountSummary" class="panel full-width hidden">
+                <div class="panel-head">
+                  <h3>My activity</h3>
+                  <span id="memberServiceHoursTotal" class="chip success">0 service hours</span>
+                </div>
+                <div id="memberAccountEvents" class="member-account-events"></div>
+                <div id="memberAccountShifts" class="member-account-events"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="calendar" class="section calendar-section">
+        <div class="container">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Plan your month</p>
+              <h2>Youth calendar</h2>
+            </div>
+            <div class="calendar-controls">
+              <button id="calendarPreviousBtn" class="calendar-nav-btn" type="button" aria-label="Previous month">‹</button>
+              <strong id="calendarMonthLabel"></strong>
+              <button id="calendarNextBtn" class="calendar-nav-btn" type="button" aria-label="Next month">›</button>
+            </div>
+          </div>
+          <div id="eventCalendar" class="event-calendar" role="grid" aria-label="Youth events calendar"></div>
+        </div>
+      </section>
+
+      <section id="events" class="section alternate">
+        <div class="container">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Events</p>
+              <h2>Latest MMOGCC YOUTH initiatives and events</h2>
+            </div>
+          </div>
+          <div id="eventsGrid" class="events-grid"></div>
+        </div>
+      </section>
+
+      <section id="volunteerShifts" class="section">
+        <div class="container">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Step into service</p>
+              <h2>Volunteer shifts</h2>
+            </div>
+          </div>
+          <div id="volunteerShiftsGrid" class="events-grid"></div>
+          <form id="volunteerShiftSignupForm" class="community-form">
+            <h3>Join a shift</h3>
+            <div class="field-row">
+              <label>Shift<select name="shiftId" id="volunteerShiftSelect" required></select></label>
+              <label>Your name<input name="name" maxlength="120" autocomplete="name" required /></label>
+              <label>Email<input name="email" type="email" maxlength="254" autocomplete="email" required /></label>
+              <button type="submit" class="primary-btn small">Join shift</button>
+            </div>
+            <div id="volunteerShiftFeedback" class="form-message" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+
+      <div id="eventRegistrationModal" class="modal hidden">
+        <div class="modal-content">
+          <div class="modal-head">
+            <h3 id="eventRegistrationTitle">Register for event</h3>
+            <button id="closeEventRegistrationModalBtn" class="close-btn" type="button" aria-label="Close event registration">×</button>
+          </div>
+          <p id="eventRegistrationDetails" class="dues-description"></p>
+          <form id="eventRegistrationForm" class="login-form">
+            <label>
+              Name
+              <input type="text" name="name" maxlength="120" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" maxlength="254" autocomplete="email" required />
+            </label>
+            <button id="eventRegistrationSubmitBtn" type="submit" class="primary-btn">Register for event</button>
+            <div id="eventRegistrationMessage" class="form-message" role="status" aria-live="polite"></div>
+            <div id="eventTicketPanel" class="event-ticket-panel hidden">
+              <div id="eventTicketQr" aria-label="Event check-in QR pass"></div>
+              <div><strong>Your check-in pass</strong><p id="eventTicketToken"></p></div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Google AdSense Banner Ad #2 -->
+      <div class="ad-container ad-horizontal">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+             data-ad-slot="0987654321"
+             data-ad-format="horizontal"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+      <section id="gallery" class="section">
+        <div class="container">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Gallery</p>
+              <h2>Moments from our MMOGCC YOUTH journey</h2>
+            </div>
+          </div>
+
+          <div class="gallery-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Training">Training</button>
+            <button class="filter-btn" data-filter="Outreach">Outreach</button>
+            <button class="filter-btn" data-filter="Workshop">Workshop</button>
+            <button class="filter-btn" data-filter="Social">Social</button>
+          </div>
+
+          <div id="galleryGrid" class="gallery-grid"></div>
+        </div>
+      </section>
+
+      <!-- Google AdSense Banner Ad #3 -->
+      <div class="ad-container ad-horizontal">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+             data-ad-slot="5555555555"
+             data-ad-format="horizontal"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+      <section id="announcements" class="section alternate">
+        <div class="container">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Announcements</p>
+              <h2>Latest updates from the MMOGCC YOUTH office</h2>
+            </div>
+          </div>
+          <div id="announcementsList" class="announcements-list"></div>
+        </div>
+      </section>
+
+      <section id="interestGroups" class="section">
+        <div class="container">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Find your people</p>
+              <h2>Explore youth groups</h2>
+            </div>
+          </div>
+          <div id="interestGroupsGrid" class="interest-groups-grid"></div>
+          <form id="groupInterestForm" class="community-form">
+            <h3>Join a group</h3>
+            <div class="field-row">
+              <label>Your name<input name="name" maxlength="120" autocomplete="name" required /></label>
+              <label>Email<input name="email" type="email" maxlength="254" autocomplete="email" required /></label>
+              <label>Group<select name="groupId" id="interestGroupSelect" required></select></label>
+              <button type="submit" class="primary-btn small">Send interest</button>
+            </div>
+            <p class="privacy-note">Your contact details are only shared with authorized youth administrators.</p>
+            <div id="groupInterestFeedback" class="form-message" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+
+      <section id="communitySupport" class="section alternate">
+        <div class="container community-support-grid">
+          <div class="community-form-wrap">
+            <p class="eyebrow">A listening community</p>
+            <h2>Share a prayer request</h2>
+            <p class="privacy-note">Only authorized administrators can read requests. Please avoid sharing urgent safety or medical details here.</p>
+            <form id="prayerRequestForm" class="community-form">
+              <label>Your name <span>(optional)</span><input name="name" maxlength="120" autocomplete="name" /></label>
+              <label>Prayer request<textarea name="message" maxlength="2000" rows="4" required></textarea></label>
+              <button type="submit" class="primary-btn small">Send privately</button>
+              <div id="prayerRequestFeedback" class="form-message" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+          <div class="community-form-wrap">
+            <p class="eyebrow">Keep the memories</p>
+            <h2>Share an event photo</h2>
+            <p class="privacy-note">Photos are reviewed by an administrator before appearing in the public gallery. Please only upload photos you have permission to share.</p>
+            <form id="photoSubmissionForm" class="community-form">
+              <label>Caption<input name="title" maxlength="120" required /></label>
+              <label>Event category<select name="category"><option>Training</option><option>Outreach</option><option>Workshop</option><option>Social</option></select></label>
+              <label class="upload-box">Choose photo<input name="photo" type="file" accept="image/jpeg,image/png,image/webp" required /></label>
+              <button type="submit" class="primary-btn small">Submit for review</button>
+              <div id="photoSubmissionFeedback" class="form-message" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="communityHighlights" class="section">
+        <div class="container highlights-grid">
+          <div>
+            <p class="eyebrow">In the spotlight</p>
+            <h2>Our community, celebrated</h2>
+            <div id="memberSpotlight" class="member-spotlight"></div>
+          </div>
+          <div>
+            <p class="eyebrow">Good things happen here</p>
+            <h2>Milestones</h2>
+            <div id="milestoneList" class="milestone-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="executives" class="section alternate">
+        <div class="container">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Executives</p>
+              <h2>Know Your Executives</h2>
+            </div>
+          </div>
+          <div id="executivesGrid" class="executives-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Google AdSense Banner Ad #4 -->
+    <div class="ad-container ad-horizontal">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+           data-ad-slot="7777777777"
+           data-ad-format="horizontal"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="brand-name">MMOGCC YOUTH HUB</p>
+          <small>Serving MMOGCC YOUTH voices, actions, and opportunities.</small>
+        </div>
+        <div class="footer-actions">
+          <button id="loginBtn" class="footer-admin-login" type="button">Admin login</button>
+          <a href="#dashboards" class="secondary-btn">Return to dashboard</a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="signupModal" class="modal hidden">
+      <div class="modal-content">
+        <div class="modal-head">
+          <h3>Join MMOGCC YOUTH</h3>
+          <button id="closeSignupModalBtn" class="close-btn" type="button">×</button>
+        </div>
+
+        <form id="signupForm" class="login-form">
+          <label>
+            Full name
+            <input type="text" name="signupName" placeholder="Kwesi Agyeman" required />
+          </label>
+          <label>
+            Email address
+            <input type="email" name="signupEmail" placeholder="kwesi@example.com" required />
+          </label>
+          <label>
+            Create password
+            <input type="password" name="signupPassword" minlength="12" maxlength="128" autocomplete="new-password" required />
+            <small>Use at least 12 characters.</small>
+          </label>
+          <label>
+            Department / interest
+            <input type="text" name="signupRole" placeholder="Catholic Youth Formation" required />
+          </label>
+          <label>
+            Date of birth
+            <input type="date" name="signupDob" required />
+          </label>
+          <label>
+            Age
+            <input type="number" name="signupAge" min="1" max="120" placeholder="18" required />
+          </label>
+          <label>
+            Day born group
+            <select name="signupDayBornGroup" required>
+              <option value="">Select day born group</option>
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+              <option value="Sunday">Sunday</option>
+            </select>
+          </label>
+          <label>
+            Location
+            <input type="text" name="signupLocation" placeholder="Accra, Ghana" required />
+          </label>
+          <label>
+            Employment status
+            <select name="signupEmploymentStatus" required>
+              <option value="">Select employment status</option>
+              <option value="Employed">Employed</option>
+              <option value="Self-employed">Self-employed</option>
+              <option value="Student">Student</option>
+              <option value="Unemployed">Unemployed</option>
+            </select>
+          </label>
+          <label id="signupEmploymentDetailLabel" class="hidden">
+            <span id="signupEmploymentDetailLabelText">School name</span>
+            <input
+              type="text"
+              id="signupEmploymentDetail"
+              name="signupEmploymentDetail"
+              placeholder="Enter the school name"
+            />
+          </label>
+          <label>
+            Contact
+            <input type="text" name="signupContact" placeholder="0244 000 000" required />
+          </label>
+          <label>
+            Emergency contact
+            <input type="text" name="signupEmergencyContact" placeholder="0244 000 001" required />
+          </label>
+          <button type="submit" class="primary-btn">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="duesPaymentModal" class="modal hidden">
+      <div class="modal-content">
+        <div class="modal-head">
+          <h3>Pay your dues</h3>
+          <button id="closeDuesPaymentModalBtn" class="close-btn" type="button" aria-label="Close payment form">×</button>
+        </div>
+        <p class="dues-description">Enter your name, email, and dues amount. Your payment reference will be generated securely.</p>
+        <form id="duesPaymentForm" class="login-form dues-payment-form">
+          <label>
+            Name
+            <input type="text" name="duesName" maxlength="120" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="duesEmail" required />
+          </label>
+          <label>
+            Amount (GHS)
+            <input type="number" name="duesAmount" min="0.01" step="0.01" placeholder="50.00" required />
+          </label>
+          <label>
+            Reference
+            <input id="duesPaymentReference" type="text" name="duesReference" placeholder="Generated after submitting" readonly />
+          </label>
+          <button id="duesPaymentButton" type="submit" class="primary-btn">Generate payment reference</button>
+          <div id="duesPaymentMessage" class="form-message" role="status" aria-live="polite"></div>
+          <button id="retryDuesVerificationBtn" type="button" class="secondary-btn hidden">Retry payment verification</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="galleryModal" class="modal hidden">
+      <div class="modal-content gallery-modal-content">
+        <div class="modal-head">
+          <h3 id="galleryModalTitle">Gallery</h3>
+          <button id="closeGalleryModalBtn" class="close-btn" type="button">×</button>
+        </div>
+
+        <div class="gallery-slideshow">
+          <button id="galleryPrevBtn" class="slideshow-btn" type="button" aria-label="Previous image">‹</button>
+          <img id="galleryModalImage" src="" alt="Gallery item" />
+          <button id="galleryNextBtn" class="slideshow-btn" type="button" aria-label="Next image">›</button>
+        </div>
+
+        <div class="gallery-modal-footer">
+          <p id="galleryModalCategory">Category</p>
+          <div class="gallery-counter">
+            <span id="galleryCurrentIndex">1</span>
+            <span>/</span>
+            <span id="galleryTotalCount">1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="editModal" class="modal hidden">
+      <div class="modal-content modal-content-wide">
+        <div class="modal-head">
+          <h3>Edit record</h3>
+          <button id="closeEditModalBtn" class="close-btn" type="button">×</button>
+        </div>
+
+        <form id="editForm" class="login-form"></form>
+      </div>
+    </div>
+
+    <div id="loginModal" class="modal hidden">
+      <div class="modal-content">
+        <div class="modal-head">
+          <h3>Admin Login</h3>
+          <button id="closeModalBtn" class="close-btn" type="button">×</button>
+        </div>
+
+        <form id="loginForm" class="login-form">
+          <label>
+            Username
+            <input type="text" name="username" placeholder="admin" required />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" placeholder="Enter password" required />
+          </label>
+          <button type="submit" class="primary-btn">Sign in</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" crossorigin="anonymous"></script>
+    <script src="script.js?v=scroll-reveal-20261104"></script>
+  </body>
+</html>
