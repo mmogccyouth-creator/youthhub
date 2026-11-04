@@ -78,9 +78,6 @@ def get_connection():
         )
         return DatabaseConnection(connection, is_postgres=True)
 
-    if os.environ.get('VERCEL') == '1':
-        raise RuntimeError('DATABASE_URL must be configured for persistent Vercel storage.')
-
     connection = sqlite3.connect(DB_FILE)
     connection.row_factory = sqlite3.Row
     return DatabaseConnection(connection, is_postgres=False)

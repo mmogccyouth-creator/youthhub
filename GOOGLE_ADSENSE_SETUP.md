@@ -76,7 +76,7 @@ Replace the placeholder slot IDs in `index.html`:
    git add index.html
    git commit -m "Add Google AdSense integration"
    ```
-2. Deploy to your hosting (Railway, Vercel, or your server)
+2. Deploy to Railway or your server
 3. Verify ads appear on your live site
 
 ### Step 6: Test Ads (Important!)
